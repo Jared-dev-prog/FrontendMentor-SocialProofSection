@@ -112,13 +112,15 @@ body {
 @media (min-width: 1024px) {
   body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("../images/bg-pattern-top-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: -160%;
-    background-position-y: -500%;
+    background: url("../images/bg-pattern-top-desktop.svg"),
+      url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position-x: -180%, 130%;
+    background-position-y: top, bottom;
   }
 
   .container {
